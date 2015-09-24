@@ -41,7 +41,7 @@ def mountline
   when :label
     target = ":LABEL=#{new_resource.device}"
   when :network
-+    target = "#{new_resource.device}"
+   target = "#{new_resource.device}"
   end
 
   line = "#{new_resource.mount_point} #{options} #{target}"
